@@ -1,4 +1,4 @@
-# Introducción al Backend 🚀
+# Introducción al Backend
 
 **Autor:** Juan Manuel Rodríguez Carreño  
 **Institución:** Centro Industrial de Mantenimiento Integral SENA-CIMI  
@@ -6,7 +6,7 @@
 
 ---
 
-## 🗄️ Fundamentos de Datos y Almacenamiento
+## Fundamentos de Datos y Almacenamiento
 
 **1. ¿Dónde se guarda esa información?**  
 Como el formulario solo tiene frontend, no se guardaría nada de esa información. Necesariamente, esa información se debe guardar en una **base de datos**.
@@ -22,7 +22,7 @@ Para permitir que se consulte o actualice la información, se hace por medio de 
 
 ---
 
-## 🏗️ Arquitectura y Buenas Prácticas
+## Arquitectura y Buenas Prácticas
 
 **5. ¿Qué diferencias existen entre frontend y backend?**  
 La diferencia principal es que el **frontend** es solo la interfaz visual y la manipulación del DOM, mientras que el **backend** es la lógica, la conexión a bases de datos, la seguridad y el rendimiento del sistema.
@@ -45,7 +45,7 @@ Es vital porque, de lo contrario, al presentarse un error o intentar escalar el 
 
 ---
 
-## ⚙️ Configuración del Entorno y Servidor
+## Configuración del Entorno y Servidor
 
 **9. ¿Qué pasos realizaste desde la creación de la carpeta hasta la ejecución del servidor?**  
 
@@ -88,7 +88,7 @@ Significa que el servidor está encendido y listo para recibir peticiones a trav
 
 ---
 
-## 🌐 Rutas y Peticiones
+## Rutas y Peticiones
 
 **14. ¿Qué diferencia existe entre cada ruta creada?**  
 Cada ruta es una dirección única que está conectada a una tarea o función específica dentro del código del servidor.
@@ -99,7 +99,7 @@ Cada ruta es una dirección única que está conectada a una tarea o función es
 
 ---
 
-## 🧠 Experiencia y Aprendizaje
+## Experiencia y Aprendizaje
 
 **16. ¿Qué dificultades encontraste?**  
 *   Al principio hubo confusión con el proceso de actualización de Node.js.
