@@ -1,114 +1,112 @@
-INTRODUCCION AL BACKEND
+# Introducción al Backend 🚀
 
-Juan Manuel Rodríguez Carreño
+**Autor:** Juan Manuel Rodríguez Carreño  
+**Institución:** Centro Industrial de Mantenimiento Integral SENA-CIMI  
+**Fecha:** 22/05/2026  
 
-Centro industrial de mantenimiento integral sena-cimi
+---
 
-22/05/2026
+## 🗄️ Fundamentos de Datos y Almacenamiento
 
-1. ¿Dónde se guarda esa información?
- Como el formulario solo tiene frontend no se guardaría nada de esa
-información, pero necesariamente esa información se guardaría en una base
-de datos.
+**1. ¿Dónde se guarda esa información?**  
+Como el formulario solo tiene frontend, no se guardaría nada de esa información. Necesariamente, esa información se debe guardar en una **base de datos**.
 
-2. ¿Cómo evitar registros duplicados?
- Para evitar registros duplicados seria con una primary key para que el
-registro se único e irrepetible.
+**2. ¿Cómo evitar registros duplicados?**  
+Para evitar registros duplicados se utiliza una *Primary Key* (Llave Primaria) para que cada registro sea único e irrepetible.
 
-3. ¿Cómo validar que los datos sean correctos?
- Para validar que unos datos ingresados por un usuario sean correctos tiene
-que cumplir con unos campos obligatorios en un campo de texto como
-Gmail, nombre, apellido, contraseña.
+**3. ¿Cómo validar que los datos sean correctos?**  
+Para validar que los datos ingresados por un usuario sean correctos, estos tienen que cumplir con campos obligatorios en los campos de texto (por ejemplo: formato de correo de Gmail, nombre, apellido, requisitos de contraseña).
 
-4. ¿Cómo permitir que luego se consulte o actualice esa información?
- Para permitir que se consulte o actualice esa información es por medio de un
-CRUD en el cual se conecta la interfaz web con el servidor y luego con la
-base de datos.
+**4. ¿Cómo permitir que luego se consulte o actualice esa información?**  
+Para permitir que se consulte o actualice la información, se hace por medio de un **CRUD** (Crear, Leer, Actualizar, Borrar). A través de este, se conecta la interfaz web con el servidor y posteriormente con la base de datos.
 
-5. ¿Qué diferencias existen entre frontend y backend?
+---
 
- La diferencia entre frontend y backend es que el frontend es solo la interfaz
-y la manipulación del DOM. mientras que el backend es la lógica , la bases
-de datos, la seguridad y el rendimiento.
+## 🏗️ Arquitectura y Buenas Prácticas
 
-6. ¿Por qué el backend es fundamental en aplicaciones reales?
- El backend es fundamental ya que es la parte lógica de la aplicación real, en
-el cual es lo que le da funcionamiento al frontend.
+**5. ¿Qué diferencias existen entre frontend y backend?**  
+La diferencia principal es que el **frontend** es solo la interfaz visual y la manipulación del DOM, mientras que el **backend** es la lógica, la conexión a bases de datos, la seguridad y el rendimiento del sistema.
 
-7. ¿Qué responsabilidades técnicas debe asumir un desarrollador backend?
- Las responsabilidades que debe asumir un desarrollador backend es el de
-hacer funcionar la aplicación en el cual el es el responsable de que la
-plataforma sea segura, rápida, estable y que los datos estén correctamente
-hacia la interfaz del usuario.
+**6. ¿Por qué el backend es fundamental en aplicaciones reales?**  
+Es fundamental porque es el cerebro y la parte lógica de la aplicación; es lo que le da funcionamiento y soporte real a lo que se ve en el frontend.
 
-8. ¿Qué implicaciones tiene no estructurar adecuadamente un proyecto desde el
-inicio?
+**7. ¿Qué responsabilidades técnicas debe asumir un desarrollador backend?**  
+Debe asumir la responsabilidad de hacer funcionar la aplicación. Es el encargado de que la plataforma sea:
+*   Segura.
+*   Rápida.
+*   Estable.
+*   Capaz de enviar los datos correctamente hacia la interfaz del usuario.
 
- Las implicaciones que tiene un proyecto al no estar bien estructurado es que al momento de hacer alguna modificacion o agregar una funcion va haber tantas lineas de codigo que el proyecto no se va a entender y tambien si sucede algun problema todo dejara de funcionar
+**8. ¿Qué implicaciones tiene no estructurar adecuadamente un proyecto desde el inicio?**  
+Si un proyecto no está bien estructurado, al momento de hacer alguna modificación o agregar una nueva función, habrá tantas líneas de código desordenado que no se entenderá. Además, si sucede algún error, todo el sistema dejará de funcionar. *(Ver pregunta 18).*
 
+**18. ¿Por qué es importante estructurar bien un proyecto desde el inicio?**  
+Es vital porque, de lo contrario, al presentarse un error o intentar escalar el proyecto agregando funciones nuevas, el fallo en una sola parte puede tumbar todo el sistema, obligando al equipo a tener que rehacer el proyecto desde cero.
 
-9. ¿Qué pasos realizaste desde la creación de la carpeta hasta la ejecución del
-servidor?
+---
 
-los pasos que realize desde la creacion de la carpeta hasta la ejecucion del servidor fueron:
-abrir el git bash
-cambiar las credenciales a las mias
-entrar al disco local d
-entrar a adso
-entrar a 3065369
-crear la carpeta
-mkdir Backend-postman
-entrar ala carpeta con cd
-verificar si la version esta bien con node -v y tambien verificar la version del npm -v
-actualizar la version de node -v con el siguiente comando npm install -g npm    
-iniciamos el archivo package.json con el siguiente comando en el git bash npm init -y 
-entramos al visual estudio code con el comando code. en el git bash 
-ahora instalamos el framework de Express con el siguiente comando en la terminal npm install express
-creamos un archivo index.js con un hola mundo
-escribimos el siguiente comando en el git bash node index.js hay abrira el puerto en el cual por defecto sale el 3000
-ahora ejecutamos el comando npm run dev arroja un error entonces vamos al package.json y en scripts ponemos "dev": "node index.js"
-despues ejecutamos denuevo el coamndo npm run dev y ya sale el primer hola mundo
+## ⚙️ Configuración del Entorno y Servidor
 
+**9. ¿Qué pasos realizaste desde la creación de la carpeta hasta la ejecución del servidor?**  
 
-10. ¿Qué función cumple el archivo package.json?
+1. Abrir **Git Bash**.
+2. Cambiar las credenciales a las mías.
+3. Ingresar al directorio de trabajo correspondiente:
+   * Entrar al disco local `D:`
+   * Entrar a la carpeta `adso`
+   * Entrar a la ficha `3065369`
+4. Crear la carpeta del proyecto: `mkdir Backend-postman`
+5. Entrar a la carpeta: `cd Backend-postman`
+6. Verificar las versiones instaladas:
+   * `node -v`
+   * `npm -v`
+7. Actualizar la versión de npm: `npm install -g npm`
+8. Iniciar el archivo de configuración: `npm init -y`
+9. Abrir Visual Studio Code: `code .`
+10. Instalar el framework Express: `npm install express`
+11. Crear un archivo `index.js` y programar un "Hola Mundo".
+12. Ejecutar el servidor con `node index.js` (por defecto abre en el puerto `3000`).
+13. **Configuración del script:** Al ejecutar `npm run dev` arrojó un error, así que modifiqué el archivo `package.json` agregando en los scripts: `"dev": "node index.js"`.
+14. Ejecutar nuevamente `npm run dev` para visualizar el primer Hola Mundo.
 
-supongo que el archivo package.json cumple la funcion de configurar un script asi sea en vite o en dev . tambien es la que da ordenes  las herramientas para abrir el puerto.
+**10. ¿Qué función cumple el archivo `package.json`?**  
+Cumple la función de configurar scripts (como en Vite o el script `dev`). También es el archivo que da las órdenes a las herramientas para que ejecuten acciones, como abrir el puerto.
 
-11. ¿Qué ocurre al ejecutar npm install?
-al ejecutar npm install se instalan unos paquetes del node.js y crea una carpeta llamada node_modules
+**11. ¿Qué ocurre al ejecutar `npm install`?**  
+Se instalan los paquetes y dependencias de Node.js requeridas para el proyecto y se genera automáticamente una carpeta llamada `node_modules` donde se almacena todo ese código.
 
-12. ¿Qué significa que el servidor esté “escuchando” en un puerto?
-significa que el servidor esta listo para recibir peticiones atraves de un canal o puerta de comunicacion.
+**12. ¿Qué significa que el servidor esté “escuchando” en un puerto?**  
+Significa que el servidor está encendido y listo para recibir peticiones a través de un canal o puerta de comunicación específica.
 
- 13. ¿Qué sucede internamente cuando accedes a http://localhost:3000/?
-El navegador se da cuenta de que localhost es tu propia máquina (127.0.0.1). Luego, el sistema operativo intenta establecer una conexión de red con el puerto 3000
+**13. ¿Qué sucede internamente cuando accedes a `http://localhost:3000/`?**  
+*   El navegador detecta que `localhost` es la máquina local (`127.0.0.1`).
+*   El sistema operativo establece una conexión de red con el puerto `3000`.
+*   El navegador construye un mensaje de texto con un formato específico y lo envía por ese canal.
+*   El servidor recibe la petición y la enruta.
+*   Se ejecuta la lógica programada.
+*   Se envían las respuestas HTTP (`response`) de vuelta al navegador.
 
-El navegador construye un mensaje de texto con un formato específico y lo envía por ese canal.
+---
 
-el servidor lo recibe y lo enruta 
+## 🌐 Rutas y Peticiones
 
-ejecucion de la logica 
+**14. ¿Qué diferencia existe entre cada ruta creada?**  
+Cada ruta es una dirección única que está conectada a una tarea o función específica dentro del código del servidor.
 
-envio de las respuestas HTTp(response)
+**15. ¿Qué papel cumplen los parámetros request y response?**  
+*   **`request` (req):** Es el parámetro que contiene y hace la petición del cliente.
+*   **`response` (res):** Es el parámetro encargado de dar y enviar las respuestas desde el servidor al cliente.
 
-14. ¿Qué diferencia existe entre cada ruta creada?
-cada ruta es una direccion unica conectada a una tarea especifica en el codigo.
+---
 
-15. ¿Qué papel cumplen los parámetros request y response?
-los parametros request son los que hacen la peticion mientras que el parametro response es el que da las respuestas.
+## 🧠 Experiencia y Aprendizaje
 
-16. ¿Qué dificultades encontraste?
-al principio andaba perdidon con lo de actualizar el node.js 
-algunas veces cuando asi el comando npm run dev salia un error
-cuando hacia un cambio en el codigo y queria verlo en el navegador no cargaba 
+**16. ¿Qué dificultades encontraste?**  
+*   Al principio hubo confusión con el proceso de actualización de Node.js.
+*   Errores al ejecutar el comando `npm run dev`.
+*   Al hacer un cambio en el código y querer verlo reflejado en el navegador, los cambios no cargaban automáticamente.
 
-
-17. ¿Qué aprendiste que no habías comprendido completamente en la parte teórica?
-
-aprendi a actualizar el node.js 
-aprendi cuando el comando npm run dev salia error era porque la parte de script no habia una ruta para que lo llamara y asi se ejecutara.
-aprendi cuando hago una actualizacion en el codigo tengo q volver a poner el comando en el git bash para que actualize lo estaba antes a lo de ahora
-
-18. ¿Por qué es importante estructurar bien un proyecto desde el inicio?
-
-es importante estructura bien un proyecto ya que si se empieza de una, al tener algun error o poner alguna nueva funcion  puede hacer que todo deje de funcionar y el proyecto lo vuelvan hacer de nuevo.
+**17. ¿Qué aprendiste que no habías comprendido completamente en la parte teórica?**  
+*   Aprendí a actualizar correctamente Node.js por consola.
+*   Comprendí que cuando el comando `npm run dev` arroja error, es porque en la sección de `scripts` del `package.json` no hay una instrucción configurada para que lo llame y lo ejecute.
+*   Aprendí que al hacer una actualización en el código base, es necesario volver a detener y ejecutar el comando en Git Bash para que el servidor se reinicie y tome los cambios nuevos.
